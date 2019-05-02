@@ -1,4 +1,6 @@
-def get_arxiv_ids(ads_query="full:'github.com' Kepler")
+"""Find a set of arXiv identifiers given a NASA ADS literature query!"""
+
+def get_arxiv_ids(ads_query="full:'github.com' Kepler"):
     """Returns arXiv identifiers of papers given an ADS query.
 
     For this to work, you need to `pip install ads` and also make sure
@@ -17,7 +19,7 @@ def get_arxiv_ids(ads_query="full:'github.com' Kepler")
                 out_citations.append(paper.citation_count)
 
 
-
 if __name__ == "__main__":
+    # Example use
     ids, citations = get_arxiv_ids()
     print(ids)

@@ -20,7 +20,7 @@ def query_github(query):
 def github2stats(repository_owner="keplergo", repository_name="lightkurve"):
     """Retrieves GitHub stats given a GitHub username and repository."""
     query = """
-        query {
+        query RepoStats {
             repository(owner:"%s", name:"%s") {
                 createdAt
             pushedAt
@@ -35,18 +35,35 @@ def github2stats(repository_owner="keplergo", repository_name="lightkurve"):
                         name
                 spdxId
                 pseudoLicense
-            },
-            forkCount,
+            }
+            forks(first:1) {
+                totalCount
+                edges() { node() { id } }
+            }
+            stargazers(first:1) {
+                totalCount
+                edges() { node() { id } }
+            }
+            issues(first:1) {
+                totalCount
+                edges() { node() { id } }
+            }
+            closedIssues: issues(first:1, states: [CLOSED]) {
+                totalCount
+                edges() { node() { id } }
+            }
             collaborators(first:1) {
                 totalCount
-                edges {
-                node {
-                    id
-                }
-                }
+                edges() { node() { id } }
             }
             }
-    }""" % (repository_owner, repository_name)
+
+        rateLimit {
+            cost
+            remaining
+        }
+    }
+    """ % (repository_owner, repository_name)
     result = query_github(query)
     return result
 

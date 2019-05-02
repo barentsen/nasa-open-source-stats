@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Which fields do we want from the ADS API?
-FIELDS = ['aff', 'arxiv_class', 'author', 'bibcode', 'bibgroup', 'bibstem',
+FIELDS = ['ack', 'aff', 'arxiv_class', 'author', 'bibcode', 'bibgroup', 'bibstem',
           'citation_count', 'data', 'database', 'first_author', 'grant',
           'identifier', 'keyword', 'property', 'pubdate', 'read_count',
           'title', 'vizier', 'year']

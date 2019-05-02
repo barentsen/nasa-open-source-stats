@@ -44,9 +44,30 @@ def github2stats(repository_owner="keplergo", repository_name="lightkurve"):
                 totalCount
                 edges() { node() { id } }
             }
-            issues(first:1) {
+            pullRequests(first:100) {
                 totalCount
-                edges() { node() { id } }
+                edges() {
+                    node() {
+                        number
+                        author {
+                            login
+                        }
+                        merged
+                        closed
+                    }
+                }
+            }
+            issues(first:100) {
+                totalCount
+                edges() {
+                    node() {
+                        number
+                        author {
+                            login
+                        }
+                        closed
+                    }
+                }
             }
             closedIssues: issues(first:1, states: [CLOSED]) {
                 totalCount

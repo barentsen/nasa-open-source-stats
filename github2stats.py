@@ -51,6 +51,7 @@ def github2stats(github_urls=_clean_github_urls()):
             for name in ['README', 'readme']:
                 for extension in ['.md', '.rst', '', '.txt']:
                     url = 'http://raw.{}/master/{}{}'.format(github_url, name, extension)
+                    print(url)
                     response = requests.get(url, timeout=500)
                     if response.status_code == 200:
                         readme =  str(response.content, 'utf-8')
@@ -61,7 +62,8 @@ def github2stats(github_urls=_clean_github_urls()):
 
 
             # Has installation
-            response = requests.get('https://raw.githubusercontent.com/{}/master/setup.py'.format('/'.join(github_url.split('/')[1:])), timeout=500)
+            print('https://raw.githubusercontent.com{}/master/setup.py'.format('/'.join(github_url.split('/')[1:]))
+            response = requests.get('https://raw.githubusercontent.com{}/master/setup.py'.format('/'.join(github_url.split('/')[1:])), timeout=500)
             if response.status_code == 200:
                 results.loc[idx, 'requirements'] =  True
             for file in ['INSTALL', 'makefile']:

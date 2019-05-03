@@ -1,0 +1,17 @@
+keras
+xgboost
+pybind11
+distributed
+q
+pexpect
+stan
+lifelines
+arrayfire
+autograd
+minimist
+pythonbrew
+prettyplotlib
+python-colorlog
+ci-helpers
+vexcl
+astroquery-paper

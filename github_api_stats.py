@@ -220,9 +220,11 @@ def get_repo_stats(repository_owner="keplergo", repository_name="lightkurve"):
         Stats for the requested repo.
     """
     stats = get_easy_stats(repository_owner, repository_name)
-    for contribution in ["issues", "pullRequests"]:
-        authors = get_authors(repository_owner, repository_name, contribution=contribution)
-        stats[f'n_{contribution}_unique_authors'] = len(np.unique(authors))
+    authors_issues = get_authors(repository_owner, repository_name, contribution="issues")
+    authors_prs = get_authors(repository_owner, repository_name, contribution="pullRequests")
+    stats['n_issues_unique_authors'] = len(np.unique(authors_issues))
+    stats['n_prs_unique_authors'] = len(np.unique(authors_prs))
+    stats['n_unique_authors'] = len(np.unique(authors_issues + authors_prs))
     return stats
 
 

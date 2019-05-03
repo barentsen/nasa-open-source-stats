@@ -350,3 +350,180 @@ arXiv:1902.02789,"['github.com/dfm/acor' 'github.com/petigura/k2phot'
 arXiv:1608.03293,['github.com/sbird/fake_spectra' 'github.com/sbird/fake_spectra/voigtfit']
 arXiv:1806.01848,['github.com/Chandra-' 'github.com/ericmandel/funtools']
 arXiv:1507.08256,['github.com/awmann/Teff_rad_mass_lum' 'github.com/awmann/metal']
+arXiv:1811.07961,['github.com/apmechev/GRID_LRT' 'github.com/mooneyse/LDR1-blazars']
+arXiv:1602.01851,['github.com/dfm/python-bls' 'github.com/vincentvaneylen']
+arXiv:1607.03886,['github.com/jradavenport/' 'github.com/jradavenport/FBEYE']
+arXiv:1512.02221,"['github.com/sbird/' 'github.com/sbird/cloudy_tables'
+ 'github.com/sbird/fake_spectra']"
+arXiv:1703.09711,['github.com/benelson/hjs' 'github.com/csunlab/NFA']
+arXiv:1708.00839,"['github.com/cmillion/gPhoton/blob/master/docs/'
+ 'github.com/tboudreaux/FaRVaE' 'github.com/tboudreaux/FaRVaE),']"
+arXiv:1510.08483,['github.com/seeh/surprise']
+arXiv:1502.04715,['github.com/dfm/k2-paper' 'github.com/dfm/ketu']
+arXiv:1202.3665,"['github.com/dfm/acor' 'github.com/dfm/emcee'
+ 'github.com/dfm/emcee/issues']"
+arXiv:1610.04621,"['github.com/kasperschmidt/'
+ 'github.com/kasperschmidt/GLASSinspectionGUIs']"
+arXiv:1609.09492,"['github.com/cmillion/gPhoton'
+ 'github.com/cmillion/gPhoton/blob/master/docs/']"
+arXiv:1601.07608,"['github.com/nespinoza/ao-reduction' 'github.com/nespinoza/exonailer'
+ 'github.com/timothydmorton/VESPA']"
+arXiv:1803.00007,[]
+arXiv:1503.07866,['github.com/timothydmorton/isochrones' 'github.com/timothydmorton/vespa']
+arXiv:1710.11152,['github.com/smillholland/Kepler']
+arXiv:1509.01989,['github.com/steven-murray/hmf']
+arXiv:1710.06442,"['github.com/NuGrid/NuPyCEE' 'github.com/NuGrid/NuPyCEE/blob/master/DOC/'
+ 'github.com/becot85/JINAPyCEE' 'github.com/brittonsmith/ytree:']"
+arXiv:1406.3020,"['github.com/dfm/exopop'
+ 'github.com/jobovy/bovy_mcmc/blob/master/bovy_mcmc/elliptical_slice']"
+arXiv:1712.05834,"['github.com/bccp/conda-channel-bccp' 'github.com/bccp/nbodykit'
+ 'github.com/eelregit/mcfit' 'github.com/esheldon/fitsio'
+ 'github.com/labarba/NSFcommittee-SI2017/'
+ 'github.com/rainwoodman/python-mpi-bcast'
+ 'github.com/rainwoodman/runtests']"
+arXiv:1507.02884,['github.com/xdqso/xdqso/']
+arXiv:1805.09413,"['github.com/Donlok/Decouple' 'github.com/Donlok/Photometry_Astrometry'
+ 'github.com/astropy/photutils/tree/v0']"
+arXiv:1710.05226,['github.com/chandra-marx/marxs']
+arXiv:1810.02824,"['github.com/gbrammer/grizli' 'github.com/gbrammer/threedhst'
+ 'github.com/gbrammer/unicorn' 'github.com/ivastar/clear']"
+arXiv:1610.09533,['github.com/hannorein/rebound']
+arXiv:1407.5793,"['github.com/CosmoloPy/),']"
+arXiv:1610.01688,[]
+arXiv:1607.01782,['github.com/simongibbons/pyfof)']
+arXiv:1606.01471,[]
+arXiv:1708.07053,['github.com/;' 'github.com/zemogle/chemevol/releases/tag/']
+arXiv:1611.08530,[]
+arXiv:1708.01626,[]
+arXiv:1705.02795,[]
+arXiv:1707.02840,['github.com/astroChasqui/q2)']
+arXiv:1602.03531,[]
+arXiv:1603.03878,[]
+arXiv:1612.04851,['github.com/California-Planet-Search/radvel']
+arXiv:1601.05413,['github.com/' 'github.com/andycasey/AnniesLasso']
+arXiv:1801.02617,"['github.com/demorest/nanopipe' 'github.com/jellis18/PAL2'
+ 'github.com/jellis18/PTMCMCSampler'
+ 'github.com/nanograv/11yr_stochastic_analysis'
+ 'github.com/nanograv/enterprise' 'github.com/nanograv/enterprise:'
+ 'github.com/stevertaylor/NX01']"
+arXiv:1901.05011,"['github.com/dfm/emcee' 'github.com/jlustigy/coronagraph'
+ 'github.com/jlustigy/samurai']"
+arXiv:1805.08247,"['github.com/SixByNine/sigproc' 'github.com/emilieparent/ffaGo'
+ 'github.com/petigura/FFA' 'github.com/vkond/ffasearch']"
+arXiv:1411.1756,"['github.com/' 'github.com/keflavich/' 'github.com/keflavich/FITS_'
+ 'github.com/keflavich/sdpy' 'github.com/keflavich/w51_singledish_']"
+arXiv:1808.07068,['github.com/awmann/M' 'github.com/ernewton/tellrv']
+arXiv:1506.03846,['github.com/andrewcumming/crustcool' 'github.com/nworbde/dStar']
+arXiv:1612.07321,['github.com/nyusngroup']
+arXiv:1802.04276,"['github.com/dgerosa/surrkick,']"
+arXiv:1801.00732,['github.com/LCOGT/banzai' 'github.com/ishivvers/TheKastShiv']
+arXiv:1511.06403,['github.com/esplint/IRACpm']
+arXiv:1810.01228,"['github.com/agabrown/astrometry-inference-tutorials/blob/master/3d-distance/resources/3D_astrometry_inference'
+ 'github.com/alexji/moog17scat' 'github.com/thibaultmerle/formato']"
+arXiv:1605.01612,['github.com/jmeyers314/linmix']
+arXiv:1509.07124,"['github.com/nyusngroup/SESNspectraLib'
+ 'github.com/nyusngroup/SESNtemple),' 'github.com/nyusngroup/SESNtemples,']"
+arXiv:1606.01264,"['github.com/OxES/k2sc,' 'github.com/hpparvi/PyTransit,'
+ 'github.com/hpparvi/k2ps']"
+arXiv:1608.08631,['github.com/JALusk/SuperBoL' 'github.com/astropy/specutils']
+arXiv:1812.07156,"['github.com/d-giles/KeplerML'
+ 'github.com/d-giles/KeplerML/blob/master/feature']"
+arXiv:1802.08585,['github.com/lynnbwilsoniii/wind']
+arXiv:1901.03877,['github.com/StingraySoftware/stingray']
+arXiv:1703.06228,[]
+arXiv:1707.02434,"['github.com/djones1040/PythonPhot)51' 'github.com/srodney/sndrizpipe),']"
+arXiv:1710.10703,['github.com/linetools/linetools' 'github.com/yzhenggit/Zheng18']
+arXiv:1607.00013,"['github.com/' 'github.com/themiyan/MosfireDRP_'
+ 'github.com/themiyan/zﬁre']"
+arXiv:1709.08640,['github.com/zpenoyre/' 'github.com/zpenoyre/CausticFrog']
+arXiv:1605.06156,['github.com/achael/eht-imaging' 'github.com/achael/eht-imaging)']
+arXiv:1810.02341,['github.com/jdeast/EXOFASTv2' 'github.com/petigura/specmatch-syn']
+arXiv:1806.04221,['github.com/rstrausb/ICACTI']
+arXiv:1811.05955,"['github.com/dfm/celerite' 'github.com/dfm/emcee)'
+ 'github.com/mzechmeister/serval' 'github.com/phillippro/agatha),'
+ 'github.com/stefano-']"
+arXiv:1709.04065,"['github.com/jlenain/ﬂaapluc,']"
+arXiv:1810.13055,['github.com/nanograv/PINT']
+arXiv:1709.10328,['github.com/igrins/plp' 'github.com/nasa/kepler-pipeline']
+arXiv:1710.11129,['github.com/' 'github.com/MTMurphy77/']
+arXiv:1802.03084,['github.com/' 'github.com/dask/distributed' 'github.com/realfastvla']
+arXiv:1802.00133,['github.com/bd-j/']
+arXiv:1610.04615,['github.com/kasperschmidt/GLASSinspectionGUIs']
+arXiv:1702.01820,['github.com/natashabatalha/PandExo']
+arXiv:1711.01267,"['github.com/dfm/corner' 'github.com/samuelyeewl/specmatch-emp'
+ 'github.com/timothydmorton/VESPA']"
+arXiv:1708.08842,['github.com/yasharhezaveh/Ensai']
+arXiv:1801.00412,['github.com/sczesla/PyAstronomy']
+arXiv:1704.07421,['github.com/pcubillos/KilpatrickEtal2018_WASP63b']
+arXiv:1810.04762,['github.com/RMRoettenbacher/SAUCES' 'github.com/vidakris/ﬂatwrm']
+arXiv:1708.01260,['github.com/PYPIT/PYPIT' 'github.com/rcooke-ast/']
+arXiv:1609.06138,"['github.com/SKIRT/PTS' 'github.com/SKIRT/SKIRT'
+ 'github.com/stargrazer82301/CAAPR']"
+arXiv:1510.08049,['github.com/nyusngroup']
+arXiv:1601.06052,['github.com/timothydmorton/obliquity']
+arXiv:1902.01936,['github.com/andosa/treeinterpreter/' 'github.com/dmitryduev/broker/']
+arXiv:1611.02141,['github.com/magic-sph']
+arXiv:1605.09738,['github.com/nustar']
+arXiv:1803.02858,['github.com/petigura/k2phot' 'github.com/petigura/terra']
+arXiv:1609.04399,[]
+arXiv:1602.04794,[]
+arXiv:1807.00024,['github.com/hannorein/']
+arXiv:1808.02808,['github.com/']
+arXiv:1507.04325,['github.com/YSOVAR']
+arXiv:1710.05463,"['github.com/dnkasen/Kasen_Kilonova_Models_2017'
+ 'github.com/dnkasen/Kasen_Kilonova_Models_2017The']"
+arXiv:1710.02894,['github.com/caseywstark/dachshund' 'github.com/kheegan/tomo_mapsn']
+arXiv:1605.02825,['github.com/' 'github.com/timothydmorton/vespa']
+arXiv:1711.11063,['github.com/walterfb/pmpar']
+arXiv:1801.07320,"['github.com/' 'github.com/danxhuber/isoclassify'
+ 'github.com/davidkipping/forecaster']"
+arXiv:1903.07637,[]
+arXiv:1904.04784,['github.com/NuSTAR/nustar-idl']
+arXiv:1806.09497,"['github.com/junkoda/cola' 'github.com/pigimonaco/Pinocchio'
+ 'github.com/savila/halogen' 'github.com/sefusatti/PowerI4']"
+arXiv:1806.09499,"['github.com/junkoda/cola' 'github.com/pigimonaco/Pinocchio'
+ 'github.com/savila/halogen' 'github.com/sefusatti/PowerI4']"
+arXiv:1804.05065,"['github.com/dtamayo/reboundx' 'github.com/farr/Rings,']"
+arXiv:1610.07699,[]
+arXiv:1510.01479,[]
+arXiv:1805.08767,"['github.com/richardjcool/HSRed),']"
+arXiv:1504.06642,[]
+arXiv:1603.09167,"['github.com/OxES/k2sc' 'github.com/hpparvi/PyBLS'
+ 'github.com/hpparvi/PyDE,' 'github.com/hpparvi/PyTransit']"
+arXiv:1706.06108,['github.com/ianan/demreg']
+arXiv:1705.04688,"['github.com/andreimesinger/21cmFAST' 'github.com/jpober/21cmSense'
+ 'github.com/nkern/emupy' 'github.com/nkern/pycape']"
+arXiv:1804.06493,['github.com/bcalden/xray-tmap-pypeline']
+arXiv:1704.00203,['github.com/timothydmorton/isochrones']
+arXiv:1605.09180,['github.com/vincentvaneylen']
+arXiv:1512.03050,"['github.com/aphearin/decorated-hod-paper'
+ 'github.com/aphearin/decorated-hod-paper,'
+ 'github.com/astropy/halotools,' 'github.com/astropy/package-template']"
+arXiv:1805.01298,['github.com/' 'github.com/lkreidberg/batman)']
+arXiv:1608.05085,['github.com/ahwkuepper/mcluster' 'github.com/nbodyx/Nbody6']
+arXiv:1805.02332,['github.com/jobovy/galpy' 'github.com/jonathansick/padova']
+arXiv:1701.01099,['github.com/scottransom/presto']
+arXiv:1505.00777,['github.com/srodney/hstsntools']
+arXiv:1808.10682,['github.com/AstroChem/vis' 'github.com/lime-rt/lime']
+arXiv:1808.00473,"['github.com/TimothyADavis/makeplots' 'github.com/granttremblay/'
+ 'github.com/jeremysanders/ggm']"
+arXiv:1612.02001,['github.com/cconroy20/fsps']
+arXiv:1807.04886,['github.com/']
+arXiv:1612.03935,"['github.com/brittonsmith/cloudy'
+ 'github.com/brittonsmith/cloudy_cooling_tools'
+ 'github.com/sbird/fake_spectra' 'github.com/trident-project/trident']"
+arXiv:1603.05666,[]
+arXiv:1212.1719,[]
+arXiv:1610.01731,"['github.com/demorest/nanopipe' 'github.com/jellis18/PAL2'
+ 'github.com/vallis/libstempo']"
+arXiv:1804.02410,['github.com/gbrammer/grizli/']
+arXiv:1610.02721,['github.com/magic-sph']
+arXiv:1811.07930,"['github.com/apmechev/' 'github.com/lofar-astron/factor'
+ 'github.com/lofar-astron/prefactor']"
+arXiv:1809.06434,[]
+arXiv:1506.08807,['github.com/WorldWideTelescope']
+arXiv:1505.06211,['github.com/djones1040/PyPhot' 'github.com/srodney/sndrizpipe']
+arXiv:1804.06269,[]
+arXiv:1803.01878,['github.com/ekta1224/BayesToolsSatDynamics']
+arXiv:1707.07905,['github.com/specdb']
+arXiv:1601.06790,['github.com/adrn/biff' 'github.com/adrn/ophiuchus']

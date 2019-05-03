@@ -110,7 +110,10 @@ def get_easy_stats(repository_owner="keplergo", repository_name="lightkurve"):
         }
     """ % (repository_owner, repository_name)
     result = query_github(query)
-    d = result['data']['repository']
+    try:
+        d = result['data']['repository']
+    except KeyError:
+        return {}
     out = {}
     out['repository_owner'] = repository_owner
     out['repository_name'] = repository_name
@@ -191,8 +194,11 @@ def get_authors(repository_owner="keplergo", repository_name="lightkurve",
                                   contribution=contribution,
                                   after=endCursor)
         js = query_github(qry)
-        if js['data']['repository'] is None:
-            print(f"Warning: not found: {repository_owner}/{repository_name}")
+        try:
+            if js['data']['repository'] is None:
+                print(f"Warning: not found: {repository_owner}/{repository_name}")
+                return []
+        except KeyError:
             return []
         extra_authors = [edge['node']['author']['login']
                          for edge in js['data']['repository'][contribution]['edges']
@@ -222,11 +228,14 @@ def get_repo_stats(repository_owner="keplergo", repository_name="lightkurve"):
 
 if __name__ == "__main__":
     import pandas as pd
-    df = pd.read_csv("repo_opensource_metrics.csv")
-    urls = df['github_url'].str.split("/")
+    import githubwebstats
+    github_urls = list(githubwebstats._clean_github_urls())
+    github_urls.append("github.com/KeplerGO/lightkurve")
     stats = []
-    for url in tqdm(urls):
-        stats.append(get_repo_stats(repository_owner=url[1], repository_name=url[2]))
+    for url in tqdm(github_urls):
+        components = url.split("/")
+        stats.append(get_repo_stats(repository_owner=components[1],
+                                    repository_name=components[2]))
     newdf = pd.DataFrame(stats)
     newdf.to_csv("github-api-stats.csv")
     print(get_rate_limit())

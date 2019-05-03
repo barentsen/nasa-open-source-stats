@@ -25,6 +25,7 @@ import os
 import requests
 import json
 import numpy as np
+from tqdm import tqdm
 
 
 TOKEN = open(os.path.expanduser("~/.github/token")).read().strip()
@@ -113,11 +114,20 @@ def get_easy_stats(repository_owner="keplergo", repository_name="lightkurve"):
     out = {}
     out['repository_owner'] = repository_owner
     out['repository_name'] = repository_name
+    if d is None:
+        print(f"Warning: not found: {repository_owner}/{repository_name}")
+        return out
     for field in ['createdAt', 'pushedAt']:
         out[field] = d[field]
-    out['language'] = d['primaryLanguage']['name']
-    out['license'] = d['licenseInfo']['spdxId']
-    out['pseudoLicense'] = d['licenseInfo']['pseudoLicense']
+    if d['primaryLanguage'] is None:
+        out['language'] = None
+    else:
+        out['language'] = d['primaryLanguage']['name']
+    if d['licenseInfo'] is None:
+        out['license'], out['pseudoLicense'] = None, None
+    else:
+        out['license'] = d['licenseInfo']['spdxId']
+        out['pseudoLicense'] = d['licenseInfo']['pseudoLicense']
     out['n_forks'] = d['forks']['totalCount']
     out['n_stars'] = d['stargazers']['totalCount']
     out['n_pullRequests'] = d['pullRequests']['totalCount']
@@ -181,13 +191,17 @@ def get_authors(repository_owner="keplergo", repository_name="lightkurve",
                                   contribution=contribution,
                                   after=endCursor)
         js = query_github(qry)
+        if js['data']['repository'] is None:
+            print(f"Warning: not found: {repository_owner}/{repository_name}")
+            return []
         extra_authors = [edge['node']['author']['login']
-                         for edge in js['data']['repository'][contribution]['edges']]
+                         for edge in js['data']['repository'][contribution]['edges']
+                         if edge['node']['author'] is not None]
         authors.extend(extra_authors)
         endCursor = js['data']['repository'][contribution]['pageInfo']['endCursor']
         hasNextPage = js['data']['repository'][contribution]['pageInfo']['hasNextPage']
     # Sanity check: did we get all authors?
-    assert(len(authors) == js['data']['repository'][contribution]['totalCount'])
+    #assert(len(authors) == js['data']['repository'][contribution]['totalCount'])
     return authors
 
 
@@ -206,6 +220,13 @@ def get_repo_stats(repository_owner="keplergo", repository_name="lightkurve"):
     return stats
 
 
-if __name__ == "__main__": 
-    print(get_repo_stats())
+if __name__ == "__main__":
+    import pandas as pd
+    df = pd.read_csv("repo_opensource_metrics.csv")
+    urls = df['github_url'].str.split("/")
+    stats = []
+    for url in tqdm(urls):
+        stats.append(get_repo_stats(repository_owner=url[1], repository_name=url[2]))
+    newdf = pd.DataFrame(stats)
+    newdf.to_csv("github-api-stats.csv")
     print(get_rate_limit())

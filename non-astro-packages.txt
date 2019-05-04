@@ -15,3 +15,5 @@ python-colorlog
 ci-helpers
 vexcl
 astroquery-paper
+astropy-tutorials
+package-template
